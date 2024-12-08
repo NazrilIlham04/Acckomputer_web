@@ -2,7 +2,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin Dashboard</title>
+    <title>Register Admin </title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
@@ -11,8 +11,9 @@
         }
 
         .sidebar {
-            height: 100vh;
-            background-color: #2d3c63;
+            height: 200vh;
+            position: fixed;
+            background-color: #133E87;
             color: white;
         }
 
@@ -98,8 +99,7 @@
             <div class="logo">
                 <div class="position-sticky">
                     <div class="text-center py-3">
-                        <h5 class="text-uppercase">ACC Computer</h5>
-                    </div>
+                        <a href="https://imgbb.com/"><img src="https://i.ibb.co.com/Byfjjmh/Screenshot-2024-04-22-043255-1.png" alt="Screenshot-2024-04-22-043255-1" border="0"></a>                    </div>
                     <ul class="nav flex-column px-3">
                         <li class="nav-item mb-3">
                             <a class="nav-link text-white active" href="#">
@@ -129,35 +129,35 @@
                     </ul>
                 </div>
             </div>
-    </div>
-    <div class="container mt-4" style="max-width: 800px;">
-    <div class="profile-card">
-    <div class="text-center profile-image mb-3">
-        <img src="https://via.placeholder.com/100" alt="Profile">
-    </div>
+        </div>
+        <div class="container mt-4" style="max-width: 800px;">
+            <div class="profile-card">
+            <div class="text-center profile-image mb-3">
+            <img src="https://via.placeholder.com/100" alt="Profile">
+        </div>
         <form>
-    <div class="mb-3">
-        <label for="username" class="form-label">Username</label>
-        <input type="text" class="form-control" id="username" value="Owner">
-    </div>
-    <div class="mb-3">
-        <label for="name" class="form-label">Nama</label>
-        <input type="text" class="form-control" id="name" value="Nazril">
-    </div>
-    <div class="mb-3 position-relative">
-        <label for="password" class="form-label">Password</label>
-        <input type="password" class="form-control" id="password" value="">
-    <div class="mb-3">
-        <label for="role" class="form-label">Role</label>
-        <select class="form-control" id="role" name="role">
-        <option value="Owner">Owner</option>
-        <option value="Teknisi">Teknisi</option>
-        </select>
-    </div>
-    <div class="d-flex justify-content-between">
-        <button type="button" class="btn btn-primary">Daftar Pengguna</button>
-        <button type="button" class="btn btn-secondary">Kembali</button>
-    </div>
-        </form>
+        <div class="mb-3">
+            <label for="username" class="form-label">Username</label>
+            <input type="text" class="form-control" id="username" value="Owner">
+        </div>
+            <div class="mb-3">
+                <label for="name" class="form-label">Nama</label>
+                <input type="text" class="form-control" id="name" value="Nazril">
+        </div>
+        <div class="mb-3 position-relative">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" class="form-control" id="password" value="">
+        <div class="mb-3">
+            <label for="role" class="form-label">Role</label>
+            <select class="form-control" id="role" name="role">
+            <option value="Owner">Owner</option>
+            <option value="Teknisi">Teknisi</option>
+            </select>
+        </div>
+        <div class="d-flex justify-content-between">
+            <button type="button" class="btn btn-primary">Daftar Pengguna</button>
+            <button type="button" class="btn btn-secondary">Kembali</button>
+     </div>
+    </form>
     </div>
 </body>

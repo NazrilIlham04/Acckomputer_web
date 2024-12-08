@@ -3,6 +3,7 @@
 namespace App\Livewire;
 
 use Auth;
+use Illuminate\Support\Facades\Auth as FacadesAuth;
 use Livewire\Component;
 
 class LoginForm extends Component
