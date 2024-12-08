@@ -5,26 +5,16 @@ use App\Livewire\LoginForm;
 use Illuminate\Support\Facades\Route;
 
 
+
 Route::get('/login',LoginForm::class)->name('login');
 
 
-// Route untuk Owner
-Route::middleware(['auth', 'owner'])->group(function () {
-
-    // Fitur-fitur lain yang hanya boleh diakses oleh Owner
-
-
-});
-
-
-// Route untuk Teknisi (Teknisi bisa akses semua fitur yang dimiliki Owner, kecuali yang khusus Owner)
-Route::middleware(['auth', 'teknisi'])->group(function () {
-
-    // Fitur-fitur yang bisa diakses oleh Teknisi
+require base_path('routes/teknisi.php');
+require base_path('routes/owner.php');
+require base_path('routes/test.php');
 
 
 
-});
 
 
 
