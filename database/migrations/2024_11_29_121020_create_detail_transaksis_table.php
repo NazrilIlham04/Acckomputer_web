@@ -14,8 +14,10 @@ return new class extends Migration
         Schema::create('detail_transaksis', function (Blueprint $table) {
             $table->id();
             $table->bigInteger('id_transaksi')->unsigned();
+            $table->bigInteger('id_produk')->unsigned();
             $table->integer('kuantitas');
             $table->foreign('id_transaksi')->references('id')->on('transaksis')->onDelete('cascade')->OnUpdate('cascade');
+            $table->foreign('id_produk')->references('id')->on('produks')->onDelete('cascade')->OnUpdate('cascade');
             $table->timestamps();
         });
     }

@@ -16,7 +16,8 @@ return new class extends Migration
             $table->string('nama_produk');
             $table->integer('harga');
             $table->bigInteger('jenis')->unsigned()->nullable();
-            $table->foreign('jenis')->references('id')->on('produks')->onDelete('set null')->onUpdate('cascade');
+            $table->foreign('jenis')->references('id')->on('jenis_produks')->onDelete('set null')->onUpdate('cascade');
+            $table->string('link_gambar')->nullable();
             $table->timestamps();
 
         });

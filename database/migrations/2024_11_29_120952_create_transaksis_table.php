@@ -13,14 +13,13 @@ return new class extends Migration
     {
         Schema::create('transaksis', function (Blueprint $table) {
             $table->id();
-            $table->bigInteger('id_user')->unsigned();
-            $table->bigInteger('id_pelayan')->unsigned();
+            $table->bigInteger('id_customer')->unsigned();
+            $table->bigInteger('id_kasir')->unsigned();
             $table->enum('metode_pembayaran',['debit','cash']);
             $table->integer('total_harga');
             $table->timestamps();
-
-            $table->foreign('id_pelayan')->references('id')->on('users')->onDelete('no action')->onUpdate('cascade');
-            $table->foreign('id_user')->references('id')->on('users')->onDelete('no action')->onUpdate('cascade');
+            $table->foreign('id_kasir')->references('id')->on('users')->onDelete('no action')->onUpdate('cascade');
+            $table->foreign('id_customer')->references('id')->on('customers')->onDelete('no action')->onUpdate('cascade');
 
         });
     }
