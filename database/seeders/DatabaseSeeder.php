@@ -18,6 +18,31 @@ class DatabaseSeeder extends Seeder
     {
         $faker = Faker::create();
 
+        DB::table('users')->insert([
+            'username' => 'Widy4aa',
+            'nama' => 'Widyaaa',
+            'password' => Hash::make('dio'),
+            'role' => 'owner',
+            'alamat' => $faker->address,
+            'no_telp' => $faker->randomNumber(8),
+            'link_gambar' => $faker->imageUrl(),
+            'created_at' => now(),
+            'updated_at' => now(),
+        ]);
+
+        DB::table('users')->insert([
+            'username' => 'Nazz',
+            'nama' => 'Nazril',
+            'password' => Hash::make('dio'),
+            'role' => 'teknisi',
+            'alamat' => $faker->address,
+            'no_telp' => $faker->randomNumber(8),
+            'link_gambar' => $faker->imageUrl(),
+            'created_at' => now(),
+            'updated_at' => now(),
+        ]);
+
+
         foreach (range(1, 10) as $index) {
             DB::table('users')->insert([
                 'username' => $faker->userName,

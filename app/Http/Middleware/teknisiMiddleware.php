@@ -2,6 +2,7 @@
 
 namespace App\Http\Middleware;
 
+use Auth;
 use Closure;
 use Illuminate\Http\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -15,6 +16,9 @@ class teknisiMiddleware
      */
     public function handle(Request $request, Closure $next): Response
     {
+        if (auth()->user()->role !== 'teknisi' && auth()->user()->role !== 'owner') {
+            return redirect()->route('login');
+        }
         return $next($request);
     }
 }
