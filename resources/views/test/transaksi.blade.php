@@ -2,7 +2,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pemesanan </title>
+    <title>Transaksi </title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
@@ -48,68 +48,48 @@
                 </ul>
             </div>
         </div>
-        <main class="col-md-9 ms-sm-auto col-lg-10 px-md-8 py-0" style="margin-left: 260px; padding: 20px;">
-            <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center">
+        <div class="content" style="margin-left: 280px; padding: 20px;">
+            <div class="search-bar" style="display: flex; align-items: center; gap: 10px; margin-bottom: 20px;">
+                <input type="text" placeholder="Search..." style="flex-grow: 1; border: 2px solid #ddd; border-radius: 5px; padding: 8px 12px;">
+                <button style="background-color: #1e00ff; color: white; border: none; padding: 8px 15px; border-radius: 5px;">Search</button>
             </div>
-            <form>
-            <h3 class="mt-5">Komponen Komputer</h3>
-            <div class="table-responsive">
-                <table class="table table-bordered">
-                    <thead class="table-light" style="background-color: #f8f9fa;">
+            <div class="table-container" style="background: white; border-radius: 10px; padding: 20px;">
+                <h2 style="font-weight: bold; font-size: 24px; margin-bottom: 10px;">Data Transaksi</h2>
+                <table class="table table-bordered" style="width: 100%; border-collapse: collapse;">
+                    <thead>
                         <tr>
-                            <th>Kode</th>
-                            <th>Nama Komponen</th>
-                            <th>Type</th>
-                            <th>Harga</th>
-                            <th>Kuantitas Pembelian</th>
-                            <th>Ceklis</th>
+                            <th style="padding: 15px; text-align: left; background-color: #f8f9fa;">Kode</th>
+                            <th style="padding: 15px; text-align: left; background-color: #f8f9fa;">Id Struk</th>
+                            <th style="padding: 15px; text-align: left; background-color: #f8f9fa;">Pelanggan</th>
+                            <th style="padding: 15px; text-align: left; background-color: #f8f9fa;">Pegawai</th>
+                            <th style="padding: 15px; text-align: left; background-color: #f8f9fa;">Jenis Pembayaran</th>
+                            <th style="padding: 15px; text-align: left; background-color: #f8f9fa;">Harga</th>
+                            <th style="padding: 15px; text-align: left; background-color: #f8f9fa;">Aksi</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td>1</td>
-                            <td>Asrock B65M-H</td>
-                            <td>Mainboard</td>
-                            <td>Rp1.955.000</td>
-                            <td><input type="number" class="form-control" min="0" value="0"></td>
-                            <td><input type="checkbox"></td>
+                        <tr style="background-color: #f2f2f2;">
+                            <td style="padding: 15px; text-align: left;">1</td>
+                            <td style="padding: 15px; text-align: left;">121212121</td>
+                            <td style="padding: 15px; text-align: left;">Nazril</td>
+                            <td style="padding: 15px; text-align: left;">Thoriq</td>
+                            <td style="padding: 15px; text-align: left;">Cash</td>
+                            <td style="padding: 15px; text-align: left;">Rp.100.000</td>
+                            <td style="padding: 15px; text-align: left;"><button class="action-btn edit" style="border: none; color: white; padding: 5px 10px; border-radius: 5px; cursor: pointer; background-color: #1e00ff;"><i class="bi bi-pencil"></i></button></td>
                         </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>VGA Colorful GeForce RTX 3060 Mini</td>
-                            <td>GPU</td>
-                            <td>Rp6.299.000</td>
-                            <td><input type="number" class="form-control" min="0" value="0"></td>
-                            <td><input type="checkbox"></td>
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td>ADATA XPG LANCER BLADE 32GB (2x16GB) 5600MHz DDR5</td>
-                            <td>RAM</td>
-                            <td>Rp1.245.000</td>
-                            <td><input type="number" class="form-control" min="0" value="0"></td>
-                            <td><input type="checkbox"></td>
-                        </tr>
-                        <tr>
-                            <td>4</td>
-                            <td>Processor Intel i3 12100F - LGA1700 Gen</td>
-                            <td>CPU</td>
-                            <td>Rp1.445.000</td>
-                            <td><input type="number" class="form-control" min="0" value="0"></td>
-                            <td><input type="checkbox"></td>
+                        <tr style="background-color: #fff;">
+                            <td style="padding: 15px; text-align: left;">2</td>
+                            <td style="padding: 15px; text-align: left;">121212121</td>
+                            <td style="padding: 15px; text-align: left;">Ilham</td>
+                            <td style="padding: 15px; text-align: left;">Thoriq</td>
+                            <td style="padding: 15px; text-align: left;">Cash</td>
+                            <td style="padding: 15px; text-align: left;">Rp.300.000</td>
+                            <td style="padding: 15px; text-align: left;"><button class="action-btn edit" style="border: none; color: white; padding: 5px 10px; border-radius: 5px; cursor: pointer; background-color: #1e00ff;"><i class="bi bi-pencil"></i></button></td>
                         </tr>
                     </tbody>
                 </table>
-                <h4 class="mt-5">Keterangan</h4>
-                <div class="mb-3">
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                </div>
-                <div class="d-flex justify-content-end mt-4">
-                    <button type="button" class="btn btn-primary btn-next" style="background-color: #1b10f0; border: none;">Berikutnya</button>
-                </div>
             </div>
-        </main>
+        </div>
     </div>
-</form>
 </body>
 </html>

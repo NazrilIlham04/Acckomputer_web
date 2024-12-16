@@ -2,11 +2,13 @@
 
 use App\Http\Controllers\LoginControllers;
 use App\Livewire\LoginForm;
+use App\Livewire\Produks;
 use Illuminate\Support\Facades\Route;
 
 
 
 Route::get('/login',LoginForm::class)->name('login');
+
 
 
 require base_path('routes/teknisi.php');

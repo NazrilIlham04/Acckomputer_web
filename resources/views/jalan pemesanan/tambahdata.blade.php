@@ -2,7 +2,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pemesanan </title>
+    <title>Edit Pengguna/Teknisi </title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
@@ -48,68 +48,37 @@
                 </ul>
             </div>
         </div>
-        <main class="col-md-9 ms-sm-auto col-lg-10 px-md-8 py-0" style="margin-left: 260px; padding: 20px;">
-            <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center">
+        <div style="margin-left: 250px; padding: 20px; flex: 1;">
+            <h4 style="font-weight: bold;">Data Pelanggan</h4>
+            <div style="background-color: white; padding: 20px; border-radius: 10px; box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);">
+                <form>
+                    <p style="color: #6c757d;">Kode 1</p>
+                    <div class="mb-3">
+                        <label for="nama" style="font-weight: bold;" class="form-label">Nama</label>
+                        <input type="text" class="form-control" id="nama" placeholder="">
+                    </div>
+                    <div class="mb-3">
+                        <label for="telepon" style="font-weight: bold;" class="form-label">Nomor Telephone</label>
+                        <input type="text" class="form-control" id="telepon" placeholder="">
+                    </div>
+                    <div class="mb-3">
+                        <label for="alamat" style="font-weight: bold;" class="form-label">Alamat</label>
+                        <input type="text" class="form-control" id="alamat" placeholder="">
+                    </div>
+                    <div class="mb-3">
+                        <label for="pc" style="font-weight: bold;" class="form-label">PC</label>
+                        <div class="input-group">
+                            <input type="text" class="form-control" id="pc" placeholder="">
+                            <button type="button" class="btn btn-primary">+</button>
+                        </div>
+                    </div>
+                    <div style="display: flex; justify-content: space-between;">
+                        <button type="button" class="btn btn-secondary">Gunakan Data Lama</button>
+                        <button type="submit" class="btn btn-primary">Berikutnya</button>
+                    </div>
+                </form>
             </div>
-            <form>
-            <h3 class="mt-5">Komponen Komputer</h3>
-            <div class="table-responsive">
-                <table class="table table-bordered">
-                    <thead class="table-light" style="background-color: #f8f9fa;">
-                        <tr>
-                            <th>Kode</th>
-                            <th>Nama Komponen</th>
-                            <th>Type</th>
-                            <th>Harga</th>
-                            <th>Kuantitas Pembelian</th>
-                            <th>Ceklis</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>1</td>
-                            <td>Asrock B65M-H</td>
-                            <td>Mainboard</td>
-                            <td>Rp1.955.000</td>
-                            <td><input type="number" class="form-control" min="0" value="0"></td>
-                            <td><input type="checkbox"></td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>VGA Colorful GeForce RTX 3060 Mini</td>
-                            <td>GPU</td>
-                            <td>Rp6.299.000</td>
-                            <td><input type="number" class="form-control" min="0" value="0"></td>
-                            <td><input type="checkbox"></td>
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td>ADATA XPG LANCER BLADE 32GB (2x16GB) 5600MHz DDR5</td>
-                            <td>RAM</td>
-                            <td>Rp1.245.000</td>
-                            <td><input type="number" class="form-control" min="0" value="0"></td>
-                            <td><input type="checkbox"></td>
-                        </tr>
-                        <tr>
-                            <td>4</td>
-                            <td>Processor Intel i3 12100F - LGA1700 Gen</td>
-                            <td>CPU</td>
-                            <td>Rp1.445.000</td>
-                            <td><input type="number" class="form-control" min="0" value="0"></td>
-                            <td><input type="checkbox"></td>
-                        </tr>
-                    </tbody>
-                </table>
-                <h4 class="mt-5">Keterangan</h4>
-                <div class="mb-3">
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                </div>
-                <div class="d-flex justify-content-end mt-4">
-                    <button type="button" class="btn btn-primary btn-next" style="background-color: #1b10f0; border: none;">Berikutnya</button>
-                </div>
-            </div>
-        </main>
+        </div>
     </div>
-</form>
 </body>
 </html>

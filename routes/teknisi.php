@@ -1,12 +1,11 @@
 <?php
 
+use App\Http\Controllers\dashboardController;
 use Illuminate\Support\Facades\Route;
 
 Route::middleware(['auth', 'teknisi'])->group(function () {
 
-    // Fitur-fitur yang bisa diakses oleh Teknisi
-
-
+    Route::get('/dashboard',[dashboardController::class,'dashboard'])->name('Dashboard');
 
 });
 

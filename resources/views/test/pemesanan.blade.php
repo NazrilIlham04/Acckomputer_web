@@ -48,68 +48,28 @@
                 </ul>
             </div>
         </div>
-        <main class="col-md-9 ms-sm-auto col-lg-10 px-md-8 py-0" style="margin-left: 260px; padding: 20px;">
-            <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center">
-            </div>
-            <form>
-            <h3 class="mt-5">Komponen Komputer</h3>
-            <div class="table-responsive">
-                <table class="table table-bordered">
-                    <thead class="table-light" style="background-color: #f8f9fa;">
-                        <tr>
-                            <th>Kode</th>
-                            <th>Nama Komponen</th>
-                            <th>Type</th>
-                            <th>Harga</th>
-                            <th>Kuantitas Pembelian</th>
-                            <th>Ceklis</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>1</td>
-                            <td>Asrock B65M-H</td>
-                            <td>Mainboard</td>
-                            <td>Rp1.955.000</td>
-                            <td><input type="number" class="form-control" min="0" value="0"></td>
-                            <td><input type="checkbox"></td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>VGA Colorful GeForce RTX 3060 Mini</td>
-                            <td>GPU</td>
-                            <td>Rp6.299.000</td>
-                            <td><input type="number" class="form-control" min="0" value="0"></td>
-                            <td><input type="checkbox"></td>
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td>ADATA XPG LANCER BLADE 32GB (2x16GB) 5600MHz DDR5</td>
-                            <td>RAM</td>
-                            <td>Rp1.245.000</td>
-                            <td><input type="number" class="form-control" min="0" value="0"></td>
-                            <td><input type="checkbox"></td>
-                        </tr>
-                        <tr>
-                            <td>4</td>
-                            <td>Processor Intel i3 12100F - LGA1700 Gen</td>
-                            <td>CPU</td>
-                            <td>Rp1.445.000</td>
-                            <td><input type="number" class="form-control" min="0" value="0"></td>
-                            <td><input type="checkbox"></td>
-                        </tr>
-                    </tbody>
-                </table>
-                <h4 class="mt-5">Keterangan</h4>
-                <div class="mb-3">
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        <div class="w-100" style="margin-left: 250px; padding: 20px;">
+            <h4 style="margin-bottom: 20px;">Pemesanan</h4>
+            <div style="background-color: white; border-radius: 8px; padding: 20px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
+                <h5 style="margin-bottom: 15px;">Keterangan</h5>
+                <div style="border: 1px solid #001efe; border-radius: 5px; padding: 15px;">
+                    <p style="margin: 0;">Nama: Nazril</p>
+                    <p style="margin: 0;">Layanan: Install Ulang Windows</p>
+                    <p style="margin: 0;">Personal Computer: Asus x441uv</p>
+                    <p style="margin: 0;">Total Harga: Rp. 100.000</p>
+                    <div class="mt-3">
+                        <label for="metode" class="form-label">Metode Pembayaran</label>
+                        <select id="metode" class="form-select">
+                            <option selected>Cash</option>
+                        </select>
+                    </div>
                 </div>
                 <div class="d-flex justify-content-end mt-4">
-                    <button type="button" class="btn btn-primary btn-next" style="background-color: #1b10f0; border: none;">Berikutnya</button>
+                    <button type="button" class="btn btn-danger me-2">Batalkan</button>
+                    <button type="button" class="btn btn-primary">Selesai</button>
                 </div>
             </div>
-        </main>
+        </div>
     </div>
-</form>
 </body>
 </html>
